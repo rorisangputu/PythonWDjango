@@ -9,31 +9,36 @@ body {
     background-color: black;
     color: whitesmoke;
     font-size: 3rem;
-    display: flex;
-    flex-flow: column;
 }
 
 nav {
     padding: 1rem;
-    background-color: #315d4c;
+    background-color: #44B78B;
     color: white;
     font-size: 2.5rem;
 }
 
 main {
-    flex-grow: 1;
-    display: grid;
-    place-content: center;
+    
 }
 
-h1,
+section {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 p {
-    text-align: center;
+    font-size: 5rem;
 }
 
 a {
     text-decoration: none;
-    color: #81dbb8;
+    color: #f4f9f7;
 }
 
 a:hover {
