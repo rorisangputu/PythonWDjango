@@ -26,3 +26,5 @@ urlpatterns = [
     path('posts/', include('posts.urls'))
 
 ]
+
+# Admin Password: rorisang99
