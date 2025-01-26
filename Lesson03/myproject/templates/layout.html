@@ -11,7 +11,8 @@
   <body>
     <nav>
       <a href="/">Home</a> | <a href="/about">About</a> |
-      <a href="{% url 'posts:list' %}">Posts</a>
+      <a href="{% url 'posts:list' %}">Posts</a> |
+      <a href="{% url 'users:register' %}">User Register</a>
     </nav>
     <main>{% block content %} {% endblock %}</main>
   </body>
