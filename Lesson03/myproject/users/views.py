@@ -17,7 +17,7 @@ def login_view(request):
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
             #Login here
-            return redirect()
+            return redirect("posts:list")
     else:
         form = AuthenticationForm()
     return render(request, "users/login.html", {"form": form} )
