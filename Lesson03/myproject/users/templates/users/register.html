@@ -1,12 +1,14 @@
-{% extends "layout.html" %} {% block title %}Register User{% endblock %}
+{% extends 'layout.html' %} {% block title %}
+  Register User
+{% endblock %}
 <hr />
-{%block content %}
-<h1>Register new user</h1>
-<section>
-  <form class="form-width-validation" action="/users/register/" method="POST">
-    {% csrf_token %}
-    {{form}}
-    <button type="Submit">Submit</button>
-  </form>
-</section>
+{% block content %}
+  <h1>Register new user</h1>
+  <section>
+    <form class="form-with-validation" action="/users/register/" method="POST">
+      {% csrf_token %}
+      {{ form }}
+      <button type="Submit">Submit</button>
+    </form>
+  </section>
 {% endblock %}
