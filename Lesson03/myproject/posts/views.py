@@ -15,4 +15,4 @@ def post_page(request, slug):
 @login_required(login_url="/users/login/") #checks if user is logged, if not directs to login
 def post_new(request):
     form = forms.CreatePost()
-    return render(request, 'posts/post_new.html')
+    return render(request, 'posts/post_new.html', {'form': form})
